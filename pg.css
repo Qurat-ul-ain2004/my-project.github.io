@@ -1,0 +1,221 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    width: 500px;
+    outline: none;
+    padding-left: 60px;
+    transition: 0.5s;
+    margin-left: 70px;
+}
+
+.search-container .fa-search {
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: blueviolet;
+}
+
+.search-container input:focus {
+    border-color: purple;
+    outline:none;
+
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 2px;
+}
+
+footer {
+    background-color: whitesmoke;
+    display: flex;
+    margin-left: 80px;
+    gap: 20px;
+    padding: 20px;
+    border-top: 1px solid blueviolet;
+}
+
+.button1 {
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    color: black;
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    border-color: blueviolet;
+    outline-color: blueviolet;
+    font-size: 15px;
+}
+
+.button1:hover {
+    text-decoration: underline;
+    transition:all ease-in-out 0.1s;
+    border-top: solid blueviolet;
+    border-bottom: solid blueviolet;
+}
+.menu-button {
+    padding-top: 3px;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-top: 110px;
+    margin-right: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+.menu-button:hover{
+    border-top: solid blueviolet;
+    border-bottom: solid blueviolet;
+    transition:all ease-in-out 0.1s;
+   
+}
+.menu-button.fa-align-center{
+    color: blueviolet;
+    background-color: blueviolet;
+    height: 4px;
+    width: 4px;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+.sidebar {
+    width: 290px;
+    height: 70vh;
+    background-color: white;
+    color: black;
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    right: -350px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-top: 85px;
+    border-radius: 20px;
+    transition: 0.3s;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    outline: none; 
+}
+
+.sidebar button {
+    width: 100%;
+    height: 60px;
+    padding: 10px 15px;
+    margin: 10px 0; 
+    background-color: #f4f4f4; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    outline: none; 
+}
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aaa; 
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #888; 
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+.sidebar-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebar button:hover {
+    background-color: blueviolet; 
+}
+
+.sidebar.show {
+    right: 0;
+}
+.sidebar-item i {
+    font-size: 18px;
+    color: blueviolet;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.sidebar-item i.favorited {
+    color: red;
+}
+.custom-sidebar {
+    width: 70px;
+    height: 70vh;
+    margin-top: 85px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+}
+
+.sidebar-icon-custom {
+    color: blueviolet;
+    font-size: 26px;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-icon-custom:hover {
+    transform: scale(1.2);
+}
